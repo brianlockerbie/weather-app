@@ -15,6 +15,19 @@ body{
     height: 100vh;
 }
 
+button {
+    width: 40px;
+    height: 40px;
+    margin: 0.5em;
+    background: #2F31312b;
+    border-radius: 45%;
+    color: #F5FBFB;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: 0.2s ease-in-out;
+}
+
 .container{
     color:azure;
     padding: 20px 65px;
@@ -37,7 +50,7 @@ body{
 
 .date-container #am-pm {
     font-size: 40px;
-    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .date-container .date {
@@ -154,4 +167,34 @@ body{
     margin: 1em;
     font-size: 110%;
     font-family: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button:hover {
+    background: #2F31312b;
+}
+
+input.search-bar {
+    padding: 0.3em 1em;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    width: calc(100% - 100px);
+    background: #2F31312b;
+    font-size: 100%;
+    font-family: inherit;
+    color: #F5FBFB;
+}
+
+.description {
+    text-transform: capitalize;
 }
