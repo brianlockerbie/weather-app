@@ -1,10 +1,13 @@
-const timeEl = document.getElementById('time');
-const dateEl = document.getElementById('date');
-const currentWeatherItemsEl = document.getElementById
+var cardEl = document.quearySelector("#.card");
+var getWeather =document.querySelector("#weather");
+
+var timeEl = document.getElementById('time');
+var dateEl = document.getElementById('date');
+var currentWeatherItemsEl = document.getElementById
 ('current-weather-items');
 
-const timezone = document.getElementById('time-zone');
-const countryEl = document.getElementById('country');
+
+var countryEl = document.getElementById('country');
 const weatherForecastEl = document.getElementById('weather-forecast');
 const currentTempEl = document.getElementById('current-temp');
 
@@ -12,7 +15,7 @@ const currentTempEl = document.getElementById('current-temp');
 const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
 const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
-const API_KEY ="1be9d80034f6359c1e9eab95d987516c";
+const API_KEY = "1be9d80034f6359c1e9eab95d987516c";
 
 
 setInterval(() => {
@@ -81,7 +84,7 @@ function showWeatherData (data){
     
     `;
 
-    let otherDayForcast = ''
+    let otherDayForecast = ''
     data.daily.forEach((day, idx) => {
         if(idx == 0){
             currentTempEl.innerHTML = `
@@ -110,4 +113,4 @@ function showWeatherData (data){
     })
 }
 
-weatherForecastEl.innerHTML = otherDayForcast;
+weatherForecastEl.innerHTML = otherDayForecast;
