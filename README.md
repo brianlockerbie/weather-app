@@ -1,5 +1,5 @@
 <h1 align="center">Weather App </h1>
-<p align="center">Module #5 - Server-Side APIs</p>
+<p align="center">Module #6 - Server-Side APIs</p>
 
 ## Description
 This application uses server-side API and JavaScript to create a weather dashboard.

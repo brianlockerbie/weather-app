@@ -15,7 +15,10 @@ const currentTempEl = document.getElementById('current-temp');
 const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
 const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
-const API_KEY = "3e8b0bd22f093796a10be79ef3c82d4d";
+const API_KEY = "7ec51d8adfb8894a3e41d376a38b7c34";
+
+
+
 
 
 setInterval(() => {
@@ -44,7 +47,7 @@ function getWeatherData() {
 
         fetch(`https://api.openweathermap.org/data/3.0/onecall?lat=$
         {latitude}&lon=${longitude}&exclude=hourly,minutely&units=metric&appid=
-        {API_KEY}`).then(res => res.json()).then(data => {
+        ${API_KEY}`).then(res => res.json()).then(data => {
 
         console.log(data)
         showWeatherData(data);
