@@ -35,3 +35,4 @@ THEN I am again presented with current and future conditions for that city
  
 
 ## Screenshots
+<img src="assets/images/weather-app-screenshot.png">
