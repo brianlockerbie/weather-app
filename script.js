@@ -1,4 +1,4 @@
-var cardEl = document.quearySelector("#.card");
+// var cardEl = document.querySelector("#.card");
 var getWeather =document.querySelector("#weather");
 
 var timeEl = document.getElementById('time');
@@ -15,7 +15,7 @@ const currentTempEl = document.getElementById('current-temp');
 const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
 const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
-const API_KEY = "1be9d80034f6359c1e9eab95d987516c";
+const API_KEY = "3e8b0bd22f093796a10be79ef3c82d4d";
 
 
 setInterval(() => {

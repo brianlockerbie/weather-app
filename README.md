@@ -2,6 +2,7 @@
 <p align="center">Module #5 - Server-Side APIs</p>
 
 ## Description
+This application uses server-side API and JavaScript to create a weather dashboard.
 
 ## Built With:
 * JavaScript
@@ -9,10 +10,10 @@
 * CSS
 
 ## Installation
-
+This does not require installation.
 
 ## Usage
-
+This application allows users to search for weather information. The user will be able to view daily weather and a 5-day forecast for the city that is searched. The user will also be able to click on previous search to display the same information.
 
 ## User Story
 AS A traveler
