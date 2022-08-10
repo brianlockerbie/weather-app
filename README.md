@@ -1,5 +1,5 @@
 <h1 align="center">Weather App </h1>
-<p align="center">Module #6 - Server-Side APIs</p>
+
 
 ## Description
 This application uses server-side API and JavaScript to create a weather dashboard.
@@ -34,5 +34,5 @@ WHEN I click on a city in the search history
 THEN I am again presented with current and future conditions for that city
  
 
-## Screenshots
+## Screenshot
 <img src="assets/images/weather-app-screenshot.png">

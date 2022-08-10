@@ -15,10 +15,7 @@ const currentTempEl = document.getElementById('current-temp');
 const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
 const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
-const API_KEY = "7ec51d8adfb8894a3e41d376a38b7c34";
-
-
-
+const API_KEY = 'ac07173bb8e953838385936cdaec79b3';
 
 
 setInterval(() => {
@@ -45,9 +42,7 @@ function getWeatherData() {
         
         let {latitude, longitude } = success.coords;
 
-        fetch(`https://api.openweathermap.org/data/3.0/onecall?lat=$
-        {latitude}&lon=${longitude}&exclude=hourly,minutely&units=metric&appid=
-        ${API_KEY}`).then(res => res.json()).then(data => {
+        fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&exclude=hourly,minutely&units=metric&appid=${API_KEY}`).then(res => res.json()).then(data => {
 
         console.log(data)
         showWeatherData(data);
@@ -78,11 +73,11 @@ function showWeatherData (data){
 
     <div class="weather-item">
         <div>Sunrise</div>
-        <div>${window.moment(sunrise * 1000).format('HH:mm a')}</div>
+        <div>${window.moment(sunrise*1000).format('HH:mm a')}</div>
     </div>
     <div class="weather-item">
         <div>Sunset</div>
-        <div>${window.moment(sunset * 1000).format('HH:mm a')}</div>
+        <div>${window.moment(sunset*1000).format('HH:mm a')}</div>
     </div>
     
     `;
